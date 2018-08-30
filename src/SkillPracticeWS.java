@@ -79,27 +79,37 @@ JOptionPane.showMessageDialog(null,"The difference between these two random numb
 		}
 
 		void skill4() { // In a pop-up, ask the user for the city they live in 
-
+String answer = JOptionPane.showInputDialog("What city do you live in?");
 
 
 		// If they answered "San Diego", tell them they live in America's Finest City 
 
-
+if(answer == "San Diego") {
+	System.out.println("YAY! You live in America's finest city.");
+}
 
 		// Otherwise, tell them to move to San Diego 
-
+else {
+	System.out.println("MOVE TO SAN DIEGO!");
+}
 
 
 		// Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation." 
 
-
+int cars = 4;
 
 		// If there is 1 car, use a pop-up to display the make/model of the car 
-
-
+if(cars == 0) {
+	JOptionPane.showMessageDialog(null, "I bet you use public transportation.");
+}
+else if(cars == 1) {
+	JOptionPane.showMessageDialog(null, "Maserati Ghibli?");
+}
 
 		// If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them. 
-
+else {
+	JOptionPane.showMessageDialog(null, "14 Wheels. WOW!");
+}
 
 
 		}
